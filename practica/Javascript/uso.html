@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica</title>
+    <script src="uso.js"></script>
+</head>
+<body>
+    <h1>Listado</h1>
+
+    <table border="1">
+        <tr>
+            <th>Numero1</th>
+            <th>Numero2</th>
+            <th>Total</th>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>4</td>
+            <td>8</td>
+        </tr>
+
+    </table>
+
+    <h1>Listado calculo</h1>
+
+    <form onsubmit="event.preventDefault()">
+        <label for="Numero1">Numero1</label>
+        <input id="Numero1" name="Numero1" type="text" value="0.0" onchange="procesarTotal()">
+        <br>
+
+        <label for="Numero2">Numero2</label>
+        <input id="Numero2" name="Numero2" type="text" value="0.0" onchange="procesarTotal()">
+        <br>
+
+        <label for="Total">Total</label>
+        <input id="Total" name="Total" type="text" value="0.0">
+        <br>
+
+        <button onclick="procesarTotal()">Procesar</button>
+    </form>
+    
+    <div id="Listado" id="name"></div>
+</body>
+</html>
